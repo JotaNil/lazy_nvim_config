@@ -184,13 +184,27 @@ local mappings = {
     i = { "<cmd>Neorg index<cr>", "Index" },
   },
   m = {
-    name = "Harpoon",
-    a = { function() require("harpoon.mark").add_file() end, "Add File" },
-    o = { function() require("harpoon.ui").toggle_quick_menu() end, "Menu" },
+		name = "Harpoon",
+		a = {
+			function()
+				harpoon:list():append()
+			end,
+			"Add File",
+		},
+		o = {
+			function()
+				harpoon.ui:toggle_quick_menu(harpoon:list())
+			end,
+			"Menu",
+		},
   },
   d ={
     name = "dadbod",
     b = { "<cmd>DBUIToggle<cr>", "Toggle" },
+  },
+  j ={
+    name = "json",
+    s = { "<cmd>%!jq '.'<cr>", "Toggle" },
   }
 }
 
@@ -202,3 +216,5 @@ return {
     require('which-key').register(mappings, opts)
   end
 }
+
+
