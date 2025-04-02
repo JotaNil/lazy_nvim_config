@@ -20,4 +20,5 @@ vim.opt.runtimepath:prepend(lazypath)
 require "options"
 require("lazy").setup("plugins")
 require "keymaps"
-require "core.colors"
+
+vim.cmd("colorscheme everforest")
