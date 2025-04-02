@@ -10,7 +10,7 @@ Requirements:
 Installation steps:
 1. Having [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim) downloaded.
 2. At your $HOME, create .config/nvim directory.
-3. `git clone https://github.com/NachoNievaG/lazy_nvim_config ~/.config/nvim`
+3. `git clone https://github.com/JotaNil/lazy_nvim_config ~/.config/nvim`
 4. `brew install ripgrep lazygit lazydocker`
 5. Launch nvim and expect the plugin installation process to finish in a couple of minutes.
 6. Enjoy!
